@@ -43,7 +43,6 @@ df['Transmit'] = lb.fit_transform(df['transmission'])
 df['Owner_Type'] = lb.fit_transform(df['owner'])
 df['brand_name'] = lb.fit_transform(df['brand'])
 df['model_name'] = lb.fit_transform(df['model'])
-nd')['selling_price'].mean()
 cols = ['year','fuel', 'seller_type',
        'transmission', 'owner', 'brand']
 data = df.drop(['name', 'fuel', 'seller_type', 'transmission', 'owner', 'brand','model'], axis=1)
